@@ -181,10 +181,10 @@ processInput!
 processLogic!
 
 render
-	rl BeginDrawing.
-	rl ClearBackground: whiteColor.
-	rl DrawFps: 10 posY: 10.
-	rl EndDrawing.!
+	rl beginDrawing.
+	rl clearBackground: whiteColor.
+	rl drawFps: 10 posY: 10.
+	rl endDrawing.!
 
 run
 	rl := RaylibLibrary default.	
@@ -206,7 +206,7 @@ setup
 	!
 
 windowedRes
-	^1920@1080! !
+	^1024@768! !
 
 !RaylibDemo categoriesForMethods!
 beFullscreen!public! !
@@ -238,6 +238,7 @@ startDemoFullscreen
 	self startDemo: true.!
 
 startDemoWindowed
+	"	self startDemoWindowed	"
 	self startDemo: false.! !
 
 !RaylibDemo class categoriesForMethods!
