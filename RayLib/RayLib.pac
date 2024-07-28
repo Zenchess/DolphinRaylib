@@ -204,6 +204,10 @@ RaylibConfigFlags at: 'UNIFORM_VEC3' put: 16r2!
 RaylibConfigFlags shrink!
 
 Smalltalk at: #RaylibConstants put: (PoolConstantsDictionary named: #RaylibConstants)!
+RaylibConstants at: 'KEY_DOWN' put: 16r108!
+RaylibConstants at: 'KEY_LEFT' put: 16r107!
+RaylibConstants at: 'KEY_RIGHT' put: 16r106!
+RaylibConstants at: 'KEY_UP' put: 16r109!
 RaylibConstants shrink!
 
 "Classes"!
@@ -571,6 +575,10 @@ isKeyDown: intKey
 	<stdcall: bool IsKeyDown sdword>
 	^self invalidCall!
 
+isKeyPressed: intKey
+	<stdcall: bool IsKeyPressed sdword>
+	^self invalidCall!
+
 isMouseButtonDown: intButton
 	<stdcall: bool IsMouseButtonDown sdword>
 	^self invalidCall!
@@ -856,6 +864,7 @@ isGamepadAvailable:!public! !
 isGamepadButtonPressed:button:!public! !
 isGamepadeAvailable:!public! !
 isKeyDown:!public! !
+isKeyPressed:!public! !
 isMouseButtonDown:!public! !
 isMouseButtonPressed:!public! !
 isMouseButtonReleased:!public! !

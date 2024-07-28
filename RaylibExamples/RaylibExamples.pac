@@ -33,7 +33,7 @@ Object subclass: #Bunny
 Object subclass: #RaylibDemo
 	instanceVariableNames: 'shouldTerminate rl random width height whiteColor lightGray process windowTitle monitorWidth monitorHeight beFullscreen'
 	classVariableNames: ''
-	poolDictionaries: 'RaylibConfigFlags'
+	poolDictionaries: 'RaylibConfigFlags RaylibConstants'
 	classInstanceVariableNames: ''!
 
 RaylibDemo subclass: #BunnyMark

@@ -1,0 +1,6 @@
+Package backups/
+*.img7
+*.errors
+*.sml
+*.chg
+raylib.dll
